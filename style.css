@@ -1,0 +1,43 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+
+	background: url(madrid.jpg) no-repeat center center fixed; 
+ 	background-size: cover;
+}
+
+h1 {
+	font-size: 4rem;
+	color: white;
+}
+
+.buffer {
+	height: 6rem;
+}
+
+.hall {
+	border-color: red;
+	border-width: 3px;
+	max-width: 85px;
+}
+
+.btn-info {
+	border-radius: 25px;
+}
+
+.btn-pl {
+	padding: 2rem 1rem;
+	background-color: red;
+	border-color: red;
+}
+
+.btn-pl:hover {
+	background-color: black;
+	border-width: 5px;
+	border-color: black;
+}
+
+.container {
+	height: 100%;
+}
