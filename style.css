@@ -1,1 +1,111 @@
-@font-face{font-family:'Shandon Slab';src:url(fonts/ShandonSlab-Italic.woff2) format('woff2'),url(fonts/ShandonSlab-Italic.woff) format('woff');font-weight:400;font-style:italic;font-display:swap}@font-face{font-family:'Bitcrusher Cd Rg';src:url(fonts/BitcrusherCdRg-Bold.woff2) format('woff2'),url(fonts/BitcrusherCdRg-Bold.woff) format('woff');font-weight:700;font-style:normal;font-display:swap}*{box-sizing:border-box;margin:0;scroll-behavior:smooth}body{font-family:'Shandon Slab',serif;margin:0;padding:0;height:100%;width:100%;background-size:cover;background-color:rgba (103,141,144,.2)}.navbar{font-family:'Bitcrusher Cd Rg',cursive;display:flex;flex-wrap:wrap;height:4rem;background-color:#23bcc1;align-items:center;flex-basis:100%;justify-content:space-around;position:fixed;width:100%}.content{padding-top:4.5rem}.logo{height:3rem;width:auto}.slogan{font-size:2.5rem;font-stretch:extra-expanded}.contactus{display:flex;flex-wrap:nowrap;bottom:0;align-items:center;height:2rem;background-color:#7d7d7f;width:100%;justify-content:space-between;margin-top:1rem;transition:height 1.5s;position:relative;scroll-behavior:smooth}.facebook{position:relative;height:1.5rem;width:auto;margin-left:.5rem}.instagram{position:relative;height:1.5rem;width:auto;margin-right:.5rem}.whatsapp{position:relative;height:1.5rem;min-height:1.5rem;width:auto;order:2;position:absolute;bottom:0}.text{margin-left:.5rem}.header{font-size:4rem;margin:0 2rem 0 2rem}.intro{font-size:1.5rem;margin:0 4rem 0 4rem}.examples{display:flex;flex-basis:100%;justify-content:space-around;flex-wrap:wrap;align-content:space-around}.mktb{width:32rem;height:auto;margin-top:4rem}.boat{transition:height 1.5s}.contactus:hover,.contactus:hover .boat{height:2.5em;scroll-behavior:smooth}div>p{text-align:center;font-size:1.5}.effect{display:flex;flex-direction:column;align-items:center;justify-content:center}.qrcode{order:1;height:0;width:auto;margin-top:-15rem;display:none;transition:1.5s;scroll-behavior:smooth}.whatsapp:hover+.qrcode{display:inline-block;height:12rem;width:auto;margin-top:-15rem;scroll-behavior:smooth}.contactus:hover .text{margin-bottom:-.5rem}
+@font-face {
+    font-family: 'Caveat';
+    src: url('fonts/Caveat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('fonts/Caveat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', serif;
+}
+
+body {
+    background-color: #d3d3d3;
+}
+
+.welcome {
+    height: 3.5rem;
+    border: 4px solid #2f4f4f;
+    text-align: center;
+    margin-bottom: -4px;
+    background-color: #f5deb3;
+}
+
+.intro {
+    margin-left: 2rem;
+    font-size: 3rem;
+}
+
+.invitation {
+    display: inline-block;
+    margin-left: 4rem;
+    border-bottom: 3px solid #2f4f4f;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.bottombar {
+    bottom: 0;
+    height: 3rem;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.waicon {
+    padding-left: 2rem;
+    height: 4rem;
+    margin-top: -1.1rem;
+}
+
+.qrcode {
+    height: 0rem;
+    margin-top: -20rem;
+    position: absolute;
+}
+
+.waicon:hover + .qrcode {
+    height: 20rem;
+}
+
+.waicon:active + .qrcode {
+    height: 20rem;
+}
