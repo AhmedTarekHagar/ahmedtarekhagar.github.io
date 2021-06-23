@@ -109,3 +109,7 @@ body {
 .waicon:active + .qrcode {
     height: 20rem;
 }
+
+a {
+    color: #fff;
+}

@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Bitcrusher Cd Hv';
+    src: url('fonts/BitcrusherCdHv-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shandon Slab';
+    src: url('fonts/ShandonSlab-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --one: #21C0BD;
+    --two: #38B0AE;
+    --three: #509F9F;
+    --four: #678F8F;
+    --five: #7E7E80;
+    --oneconv: 33, 192, 189;
+    --twoconv: 56, 176, 174;
+    --threeconv: 80, 159, 159;
+    --fourconv: 103, 143, 143;
+    --fiveconv: 126, 126, 128;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Shandon Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(var(--threeconv), .6);
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    font-family: 'Bitcrusher Cd Hv', cursive;
+    display: flex;
+    height: 4rem;
+    background-color: #23BCC1;
+    align-items: center;
+    justify-items: center;
+    flex-basis: 100%;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+}
+
+.content {
+    padding-top: 4.5rem;
+}
+
+.logo {
+    height: 3rem;
+    width: auto;
+}
+
+.slogan, .hinge {
+    font-size: 2.5rem;
+    font-stretch: extra-expanded;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+.header {
+    font-size: 4rem;
+    margin: 0 2rem 0 2rem;
+    padding: 2rem 0;
+}
+
+.intro {
+    font-size: 1.5rem;
+    margin: 0 4rem 0 4rem;
+    padding-bottom: 4rem;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.more {
+    width: 100%;
+    height: 6rem;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2rem;
+    border: 1px solid black;
+}
+
+.contactus {
+    background-color: var(--five);
+    color: #fff;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.footerlogo {
+    max-width: 9rem;
+}
+
+.footerinstagram {
+    width: 4rem;
+    padding-top: 2rem;
+}
+
+.middle {
+    height: 80%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    grid-column-gap: 10px;
+    padding-left: 12rem;
+    font-size: 1.5rem;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item2, .item4 {
+    max-height: 2rem;
+}
+
+.item3, .item5 {
+    padding-top: .35rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding-right: 4rem;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.location {
+    max-height: 6rem;
+    order: 1;
+}
+
+.whatsapp {
+    max-height: 6rem;
+    order: 3;
+}
+
+.waqrcode { 
+    max-height: 6rem;
+    order: 2;
+    display: none;
+}
+
+.whatsapp:hover + .waqrcode {
+    display: inline-flex;
+}
