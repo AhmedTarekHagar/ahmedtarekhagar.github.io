@@ -171,11 +171,11 @@ body {
 }
 
 .footerlogo {
-    max-width: 9rem;
+    max-width: 9vw;
 }
 
 .footerinstagram {
-    width: 4rem;
+    width: 4vw;
     padding-top: 2rem;
 }
 
@@ -185,7 +185,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 15fr;
     grid-column-gap: 10px;
-    padding-left: 12rem;
+    padding-left: 12vw;
     font-size: 1.5rem;
 }
 
