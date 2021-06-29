@@ -160,6 +160,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 5vw;
+    position: relative;
 }
 
 .left {
@@ -228,4 +229,8 @@ body {
 
 .whatsapp:hover + .waqrcode {
     max-height: 7rem;
+}
+
+.contactus > div {
+    max-width: 100%;
 }
